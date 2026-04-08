@@ -8,18 +8,46 @@
 </head>
 
 <body>
-    <h1>Axiolink Systems Internship Form</h1>
-    <form action="post"> <!-- get,post we'll learn in backend InshaAllah -->
-        <label for="username">Enter Your Name</label>
-        <input type="text" id="username" name="username" placeholder="...">
-        <!-- GENDER-->
-        <div> <!-- right now code with harry nay nahi sikhaya just for breaking into partitions -->
-            <label for="male">MALE</label>
-            <input type="radio" id="male">
-            <label for="female">FEMALE</label>
-            <input type="radio" id="female">
+    <h1>FORM TO APPLY FOR Internship in Axiolink Systems</h1> <!-- 9th April 2026 -->
+    <form action="post"> <!-- we'll learn more about this in Backend Development client and server -->
+        <!-- this label will look for id of input -->
+        <div> <!-- containerization of script == div-->
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+        </div>
+        <div> <!-- div for gender BETTER THAN BR tag -->
+            <!-- radio is basically the circle button and one a time can be selected-->
+            <label for="gender">Gender</label>
+            <!-- name is key here -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div> <!-- for checkbox -->
+          <input type="checkbox" id="subscribe" name="subscribe" value="yes" required> <!-- required use here to learn only -->
+          <label for="subscribe">Subscribe to News Letter</label>
         </div>
 
+        <div> <!-- for text area -->
+            <label for="comment">Enter your comment here</label>
+            <br> <!-- not recommended by code with harry -->
+           <textarea id="comment" name="comment" rows="4" cols="50"></textarea>
+        </div>
+
+        <div> <!-- select tag -->
+           <select name="fruits">
+            <option value="apple">Apple</option>
+            <option value="mango">Mango</option>
+            <option value="strawberry">Strawberry</option>
+           </select>
+        </div>
+
+        <!-- html and backend ka connection -->
+        <form action="/submit.php" method="post"></form>
+
+        <!-- required keyword is pretty self explanatory and autofocus is strict focusing on an element or tag -->
+         
     </form>
 </body>
 
