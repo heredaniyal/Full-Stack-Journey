@@ -1,0 +1,12 @@
+p { /* selector */
+    background-color: purple;
+    color: white;
+}
+
+a{
+    background-color: lightcoral;
+}
+
+div {
+    background-color: yellow;
+}
