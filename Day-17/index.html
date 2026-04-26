@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS SELECTORS TO BE DISCUSSED</title>
+    <style> /* element selector */
+      div {
+        /* background-color: red; */
+      }
+      /*class selector*/
+      .red { /*.red meaning class of red */
+        background-color: red;
+      }
+      /* id selector */
+      #green{
+        background-color: green;
+      }
+      /* child selectors direct child hona chahiye*/
+      div > p {
+        color:blue;
+        background-color: brown;
+      }
+
+      /* descendant selector jahan marzi ho*/
+      div p {
+        color:blue;
+        background-color: brown;
+      }
+
+      /* universal selector */
+      * { 
+         margin:0;
+         padding: 0;
+      }
+
+      /* pseudo selector */
+      a:visited{
+        color:yellow;
+      }
+
+      a:link{
+        color:green;
+      }
+
+      a:active{ /* when you click, it then shows up*/
+        background-color: red;
+      }
+
+      a:hover{ /*hover krne pr apply hoga*/
+        background-color: yellowgreen;
+      }
+
+      p:first-child{ /* not used much in the industry */
+        background-color: aqua;
+      }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <p>i am 1</p>
+        <p>i am 2</p>
+    </div>
+    <div class="red"> <!-- class red -->
+        i am a divider
+        <p>i am a paragraph inside 1st div</p>
+    </div>
+    <div id="green"> <!-- gave green id -->
+        i am also div
+    </div>
+
+    <a href="https://www.google.com">Google Yes</a>
+</body>
+</html>
