@@ -1,0 +1,29 @@
+.boxer { /*class selector*/
+background-color: aqua;
+}
+
+* { /*universal selector everything selector*/
+margin: 0;
+padding: 0;
+}
+
+.boxer1 {
+    color: yellow;
+    padding:10px; /*inside*/
+    margin: 5px; /*outside*/
+    border: 2px solid blue;
+    height: 200px;
+    box-sizing: border-box; /*actual value dikhata hai*/
+}
+
+.boxer2 {
+    color: red;
+    padding:10px; /*inside*/
+    margin: 5px; /*outside*/
+    border: 2px solid blue;
+    height: 200px;
+    box-sizing: border-box; /*actual value dikhata hai*/
+}   
+
+/*margin collapse*/
+/*consistent rehta hai phir tou */
