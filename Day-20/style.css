@@ -1,0 +1,12 @@
+/*I'M THE BEST 110%*/
+
+/*DIDN'T USE AI BUT USED DOCUMENTATION FOR W3 SCHOOLS*/
+div:first-child>p:first-child{
+background-color: yellow;
+color:red;
+} /*used some unique things*/
+
+div>p {
+    background-color: blue;
+    color:white;
+} /*DONE*/
