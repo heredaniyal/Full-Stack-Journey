@@ -1,8 +1,14 @@
-* {}
+* { /* universal selectors */
+margin: 0;
+padding: 0;
+}
 
-.box {
-    /* Box Class */
-    border: 2px solid black;
-    width: 233px;
-    background-color: aquamarine;
-} /*resume from 2:55*/
+.box { /*. is basically class # is id*/
+    box-sizing: border-box; /*scroll bar finishes*/
+        border: 2px solid black;
+        /* width: 2048px; */
+        width: 100vw; /*viewport width dynamically analyzes screen resolution*/
+        background-color: aquamarine;
+      }
+
+      /*best tarika is external css*/
